@@ -5,7 +5,7 @@
     run: tests/playbooks/run.yaml
     post-run: tests/collect-logs.yaml
     roles:
-      - zuul: openstack/ansible-role-zuul
+      - zuul: windmill/ansible-role-zuul
 
 # Testing for zuul_install_method: pip
 - job:
@@ -27,7 +27,7 @@
     name: ansible-role-zuul-src
     parent: ansible-role-zuul-base
     required-projects:
-      - name: openstack-infra/zuul
+      - name: zuul/zuul
     vars:
       zuul_git_update: false
       zuul_install_method: git

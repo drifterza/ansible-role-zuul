@@ -88,7 +88,7 @@
 
     - name: Register zuul_git_dest_stat.
       stat:
-        path: /home/zuul/src/git.openstack.org/openstack-infra/zuul
+        path: /home/zuul/src/opendev.org/zuul/zuul
       register: zuul_git_dest_stat
       when: zuul_install_method == 'git'
 
