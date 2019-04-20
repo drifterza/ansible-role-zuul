@@ -6,7 +6,7 @@ Ansible role to manage Zuul
 
 * License: Apache License, Version 2.0
 * Documentation: https://ansible-role-zuul.readthedocs.org
-* Source: https://git.openstack.org/cgit/openstack/ansible-role-zuul
+* Source: https://opendev.org/windmill/ansible-role-zuul
 * Bugs: https://bugs.launchpad.net/ansible-role-zuul
 
 Description
@@ -37,40 +37,6 @@ should be copied to ``zuul_config_gerrit_sshkey``.
 
 Role Variables
 --------------
-
-.. code-block:: yaml
-
-    # Method used to install zuul. Valid values are git and pip.
-    # Default: git
-    zuul_install_method: git
-
-    # Git, SSH, or HTTP(s) protocol address of the git repository.
-    # Default: https://git.openstack.org/openstack-infra/zuul
-    zuul_git_uri: https://git.openstack.org/openstack-infra/zuul
-
-    # What version of the repository to check out.
-    # Default: master
-    zuul_git_version: master
-
-    # Absolute path of where the repository should be checked out to.
-    # Default: /opt/ansible-role-zuul/git/openstack-infra/zuul
-    zuul_git_dest: /opt/ansible-role-zuul/git/openstack-infra/zuul
-
-    # The version number to install from the Python Package Index.
-    # Default: None
-    zuul_pip_version:
-
-    # Name of the user to be created.
-    # Default: zuul
-    zuul_user_name: zuul
-
-    # Name of the group to be created.
-    # Default: zuul
-    zuul_user_group: zuul
-
-    # Path of home directory to be created.
-    # Default: /var/lib/zuul
-    zuul_user_home: /var/lib/zuul
 
 Zuul Merger Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~
