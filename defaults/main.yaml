@@ -187,3 +187,19 @@ zuul_service_zuul_web_enabled: true
 zuul_service_zuul_web_manage: true
 zuul_service_zuul_web_name: zuul-web.service
 zuul_service_zuul_web_state: started
+
+zuul_config_gearman_listen_address: '127.0.0.1'
+zuul_config_gearman_listen_port: '4730'
+zuul_config_zookeeper_listen_address: 'localhost'
+zuul_config_zookeeper_listen_port: '2181'
+zuul_config_gearman_server_listen_address: '127.0.0.1'
+zuul_config_gerrit_server_listen_address: '127.0.0.1'
+zuul_config_gerrit_server_listen_port: '29418'
+zuul_config_merger_listen_address: '127.0.0.1'
+zuul_config_merger_git_user_email: 'zuul@example.com'
+zuul_config_merger_git_user_name: 'zuul-example'
+zuul_config_executor_finger_port: '17979'
+zuul_config_executor_finger_gw: '127.0.0.1'
+zuul_config_executor_private_key: '/var/lib/zuul/.ssh/id_rsa'
+zuul_config_connection_git_base: 'https://opendev.org/'
+zuul_config_web_listen_address: '127.0.0.1'
